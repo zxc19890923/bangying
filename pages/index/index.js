@@ -20,6 +20,14 @@ Page({
       url: '../logs/logs'
     })
   },
+  gotoEditor () {
+    wx.navigateTo({
+      url: '../editor/editor'
+    })
+    // this.setData({
+    //   motto: '张旭超'
+    // })
+  },
   onLoad: function () {
     // 调用接口，获取登录信息。
     http.getUserInfoApi(
@@ -59,6 +67,12 @@ Page({
         }
       })
     }
+  },
+  onEditorReady() {
+    const that = this
+    wx.createSelectorQuery().select('#editor').context(function (res) {
+      that.editorCtx = res.context
+    }).exec()
   },
   getUserInfo: function(e) {
     console.log(e)
