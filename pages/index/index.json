@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog",
-    "mp-loading": "/miniprogram_npm/weui-miniprogram/loading/loading"
+    "mp-loading": "/miniprogram_npm/weui-miniprogram/loading/loading",
+    "mp-uploader": "/miniprogram_npm/weui-miniprogram/uploader/uploader",
+    "editor": "../editor/editor"
   }
 }

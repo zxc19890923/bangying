@@ -12,7 +12,18 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    dialogShow: false,
+    buttons: [{text: '取消'}, {text: '确定'}],
+    time: '12:00',
+    userInfoApi: {}
+  },
+  // 时间控件
+  bindTimeChange (e) {
+    console.log(e, '时间')
+    this.setData({
+      time: e.detail.value
+    })
   },
   //事件处理函数
   bindViewTap: function() {
@@ -28,6 +39,26 @@ Page({
     //   motto: '张旭超'
     // })
   },
+  // 显示是否授权弹框
+  openDialog () {
+    this.setData({
+      dialogShow: true
+    })
+  },
+  // 弹框按钮被处罚
+  tapDialogButton (e) {
+    console.log(e)
+    this.setData({
+      dialogShow: false
+    })
+    if (e.detail.index === 0) {
+      // 取消
+      console.log('取消')
+    } else {
+      // 确定
+      console.log('确定')
+    }
+  },
   onLoad: function () {
     // 调用接口，获取登录信息。
     http.getUserInfoApi(
@@ -38,6 +69,9 @@ Page({
         },
         success: res => {
           console.log(res, '获取数据成功')
+          this.setData({
+            userInfoApi: res
+          })
         }
       }
     )

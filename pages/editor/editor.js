@@ -78,7 +78,7 @@ Page({
   },
   onEditorReady() {
     const that = this
-    wx.createSelectorQuery().select('#editor').context(function (res) {
+    this.createSelectorQuery().select('#editor').context(function (res) {
       that.editorCtx = res.context
     }).exec()
   },
