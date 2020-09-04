@@ -2,7 +2,9 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/editor/editor"
+    "pages/editor/editor",
+    "pages/mediation/mediation",
+    "pages/authentication/authentication"
   ],
   "window":{
     "backgroundTextStyle":"light",

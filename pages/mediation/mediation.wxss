@@ -1,0 +1,39 @@
+.borrowContainer {
+  background: #fff;
+}
+.pleaseChange {
+  color: #999;
+  padding: 25rpx 30rpx 25rpx 0rpx;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.borrow {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 30rpx 30rpx 0rpx;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+/* .borrow:hover {
+  background-color: #eee;
+} */
+.borrowLeft {
+  flex: 1;
+}
+.borrowLeftTop {
+  font-size: 34rpx;
+  color: #222;
+}
+.borrowLeftBottom {
+  font-size: 26rpx;
+  color: #999;
+}
+.borrowRight {
+  width: 60rpx;
+  text-align: right;
+  color: #c7c7c7;
+}
+.rightArrow {
+  width: 26rpx;
+  height: 36rpx;
+}

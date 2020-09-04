@@ -1,34 +1,34 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
+  <!-- <view class="userinfo"> -->
     <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
     <!-- <block wx:else> -->
       <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> -->
       <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
     <!-- </block> -->
-    <view style="text-align: left">
+    <!-- <view style="text-align: left">
       <label style="color: #468dcc; font-size: 16px">通过接口获取数据</label>
       <view>姓名：{{userInfoApi.data.user_info.name}}</view>
       <view>性别：{{userInfoApi.data.user_info.sex === '1' ? '男' : '女'}}</view>
       <view>手机：{{userInfoApi.data.user_info.phone}}</view>
       <view>职位：{{userInfoApi.data.user_info.position}}</view>
       <view>部门：{{userInfoApi.data.user_info.department}}</view>
-    </view>
-    <button type="primary" bindtap="openDialog">是否接受授权</button>
+    </view> -->
+    <!-- <button type="primary" bindtap="openDialog">是否接受授权</button>
     <view style="margin: 10px 0"></view>
     <button type="warn" bindtap="gotoEditor">债权人是否申报债权（认领）</button>
-    <view style="margin: 10px 0"></view>
+    <view style="margin: 10px 0"></view> -->
     <!-- <text class="user-motto" bindtap="gotoEditor">{{motto}}</text> -->
     <!-- <mp-loading type="circle"></mp-loading> -->
     <!-- <mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" show="{{show}}" animated="{{animated}}"></mp-loading> -->
     <!-- <mp-loading type="dot-white" ext-class="demo1"></mp-loading> -->
-    <mp-dialog title="是否接受授权" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <!-- <mp-dialog title="是否接受授权" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}"> -->
         <!-- <view>test content</view> -->
-    </mp-dialog>
-  </view>
+    <!-- </mp-dialog> -->
+  <!-- </view> -->
   <!-- 引入自定义组件 -->
   <!-- <editor></editor> -->
-  <view class="myForm">
+  <!-- <view class="myForm">
     <form class="page-body">
       <view class="page-section">
         <view class="weui-cells__title">姓名</view>
@@ -72,5 +72,9 @@
         <button type="primary">提交验证</button>
       </view>
     </form>
+  </view>
+</view> -->
+  <view class="main">
+    <mediation></mediation>
   </view>
 </view>

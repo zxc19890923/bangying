@@ -1,0 +1,36 @@
+<view class="container">
+  <mp-form id="authentForm">
+    <mp-cells title="验证个人信息" footer="实名认证的说明文字站位">
+      <mp-cell>
+        <image slot="icon" src="../images/phone.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="出借人手机号码"/>
+      </mp-cell>
+      <mp-cell ext-class="weui-cell_vcode">
+        <image slot="icon" src="../images/power.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="mobile" class="weui-input" placeholder="验证码"/>
+        <view slot="footer" class="weui-vcode-btn">获取验证码</view>
+      </mp-cell>
+      <mp-cell>
+        <image slot="icon" src="../images/user.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="出借人姓名"/>
+      </mp-cell>
+      <mp-cell>
+        <image slot="icon" src="../images/identity.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="出借人身份照吗"/>
+      </mp-cell>
+      <mp-cell>
+        <image slot="icon" src="../images/card.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="qq" class="weui-input" placeholder="开户姓名与出借人一致的银行卡号"/>
+      </mp-cell>
+    </mp-cells>
+    <view class="authentBottom">
+      <view class="authentBottomTop">
+        <checkbox id="agree" value="" checked="" />
+        <label for="agree"><text style="margin-left: 10rpx;">同意通过帮瀛平台认领债权</text></label>
+      </view>
+      <!-- <view class="authentButton" > -->
+        <button type="primary" style="width: calc(100% - 80rpx)">下一步</button>
+      <!-- </view> -->
+    </view>
+  </mp-form>
+</view>
