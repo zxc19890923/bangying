@@ -11,3 +11,25 @@
 page {
   border-top: 1rpx solid rgba(0,0,0,0.25);
 }
+.warnButton {
+  width: 148rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #fff1f0;
+  border: 2rpx solid #fea39e;
+  border-radius: 32rpx;
+  text-align: center;
+  color: #F05A50;
+  font-weight: 600;
+}
+.primaryButton {
+  width: 148rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: #f4fff1;
+  border: 2rpx solid #4a9838;
+  border-radius: 32rpx;
+  text-align: center;
+  color: #4A9838;
+  font-weight: 600;
+}

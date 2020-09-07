@@ -6,6 +6,9 @@
     "mp-uploader": "/miniprogram_npm/weui-miniprogram/uploader/uploader",
     "editor": "../editor/editor",
     "mediation": "../mediation/mediation",
-    "authentication": "../authentication/authentication"
+    "authentication": "../authentication/authentication",
+    "agreement": "../agreement/agreement",
+    "investInfo": "../investInfo/investInfo",
+    "investDetail": "../investDetail/investDetail"
   }
 }

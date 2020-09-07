@@ -7,7 +7,7 @@ Page({
       })
     } else {
       wx.navigateTo({
-        // url: '/pages/investInfo/investInfo'
+        url: '/pages/editor/editor'
       })
     }
   }

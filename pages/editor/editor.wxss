@@ -1,8 +1,4 @@
 @import "./assets/iconfont.wxss";
-page>view {
-  max-width: 100%;
-}
-
 .editorContainer {
   position: absolute; 
   top: 49px; 

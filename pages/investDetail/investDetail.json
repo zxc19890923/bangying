@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "身份验证",
+  "navigationBarTitleText": "查看详情",
   "usingComponents": {
     "mp-form": "/miniprogram_npm/weui-miniprogram/form/form",
     "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",

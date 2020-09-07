@@ -1,0 +1,39 @@
+<view class="container">
+  <mp-form class="authentForm">
+    <mp-cells title="基本信息" footer="">
+      <mp-cell title="出借人" prop="c">
+        张旭超
+      </mp-cell>
+      <mp-cell title="欠款人" prop="c">
+        马云
+      </mp-cell>
+      <mp-cell title="项目状态" prop="c">
+        催收中（已发送催收短信）
+      </mp-cell>
+      <mp-cell title="交易平台" prop="c">
+        P2P交易平台
+      </mp-cell>
+      <mp-cell title="交易日期" prop="c">
+        2015-12-26 10: 00
+      </mp-cell>
+      <mp-cell title="欠款总额" prop="c">
+        32323.20元
+      </mp-cell>
+      <mp-cell title="其他项目" prop="c">
+        -
+      </mp-cell>
+      <mp-cell title="其他项目" prop="c">
+        -
+      </mp-cell>
+      <mp-cell title="其他项目" prop="c">
+        -
+      </mp-cell>
+      <mp-cell title="其他项目" prop="c">
+        -
+      </mp-cell>
+      <mp-cell title="其他项目" prop="c">
+        -
+      </mp-cell>
+    </mp-cells>
+  </mp-form>
+</view>

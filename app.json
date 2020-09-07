@@ -4,7 +4,10 @@
     "pages/logs/logs",
     "pages/editor/editor",
     "pages/mediation/mediation",
-    "pages/authentication/authentication"
+    "pages/authentication/authentication",
+    "pages/agreement/agreement",
+    "pages/investInfo/investInfo",
+    "pages/investDetail/investDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
