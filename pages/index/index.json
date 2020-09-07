@@ -1,9 +1,6 @@
 {
   "navigationBarTitleText": "帮瀛调解中心",
   "usingComponents": {
-    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog",
-    "mp-loading": "/miniprogram_npm/weui-miniprogram/loading/loading",
-    "mp-uploader": "/miniprogram_npm/weui-miniprogram/uploader/uploader",
     "editor": "../editor/editor",
     "mediation": "../mediation/mediation",
     "authentication": "../authentication/authentication",

@@ -12,6 +12,7 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
+    // 如果按钮属性 open-type="getUserInfo" 存在，那么就为true
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     dialogShow: false,
     buttons: [{text: '取消'}, {text: '确定'}],

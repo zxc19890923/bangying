@@ -8,7 +8,7 @@
         马云
       </mp-cell>
       <mp-cell title="项目状态" prop="c">
-        催收中（已发送催收短信）
+        催收中<text class="errorText">（已发送催收短信）</text>
       </mp-cell>
       <mp-cell title="交易平台" prop="c">
         P2P交易平台
@@ -18,6 +18,9 @@
       </mp-cell>
       <mp-cell title="欠款总额" prop="c">
         32323.20元
+        <view slot="footer" style="font-size: 0">
+          <image class="infoIcon" src="/pages/images/info.png"></image>
+        </view>
       </mp-cell>
       <mp-cell title="其他项目" prop="c">
         -
