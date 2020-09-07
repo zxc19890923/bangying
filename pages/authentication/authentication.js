@@ -5,7 +5,7 @@ Page({
     })
   },
   gotoInvestList () {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/investInfo/investInfo',
     })
   }

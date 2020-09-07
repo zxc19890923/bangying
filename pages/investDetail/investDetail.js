@@ -1,12 +1,5 @@
 Page({
-  gotoAgreementPage () {
-    wx.navigateTo({
-      url: '/pages/agreement/agreement',
-    })
-  },
-  gotoInvestList () {
-    wx.navigateTo({
-      url: '/pages/investInfo/investInfo',
-    })
+  onLoad (options) {
+    console.log(JSON.parse(options.item))
   }
 })
