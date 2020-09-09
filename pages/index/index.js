@@ -34,7 +34,7 @@ Page({
   },
   gotoEditor () {
     wx.navigateTo({
-      url: '../editor/editor'
+      url: '../lender/editor/editor'
     })
     // this.setData({
     //   motto: '张旭超'

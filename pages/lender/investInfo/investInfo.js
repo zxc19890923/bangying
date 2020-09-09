@@ -7,7 +7,7 @@ Page({
     let str = JSON.stringify(e.currentTarget.dataset.item)
     console.log(str)
     wx.navigateTo({
-      url: '/pages/investDetail/investDetail?item=' + str,
+      url: '/pages/lender/investDetail/investDetail?item=' + str,
     })
   },
   onLoad () {

@@ -1,11 +1,11 @@
 {
   "navigationBarTitleText": "帮瀛调解中心",
   "usingComponents": {
-    "editor": "../editor/editor",
-    "mediation": "../mediation/mediation",
-    "authentication": "../authentication/authentication",
-    "agreement": "../agreement/agreement",
-    "investInfo": "../investInfo/investInfo",
-    "investDetail": "../investDetail/investDetail"
+    "editor": "../lender/editor/editor",
+    "mediation": "../lender/mediation/mediation",
+    "authentication": "../lender/authentication/authentication",
+    "agreement": "../lender/agreement/agreement",
+    "investInfo": "../lender/investInfo/investInfo",
+    "investDetail": "../lender/investDetail/investDetail"
   }
 }

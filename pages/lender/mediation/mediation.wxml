@@ -8,7 +8,7 @@
       <view class="borrowLeftBottom">有借有还，再借不难。欠债还钱，杀人偿命，天经地义。国美小额贷，欺骗老百姓。</view>
     </view>
     <view class="borrowRight">
-      <image src="../images/right-arrow.png" class="rightArrow" />
+      <image src="../../images/right-arrow.png" class="rightArrow" />
     </view>
   </view>
   <view class="borrow" style="border: none;" bindtap="gotoAuthenticationPage" data-pm="2">
@@ -17,7 +17,7 @@
       <view class="borrowLeftBottom">别老催，越催越没钱。别老催，越催越没钱。别老催，越催越没钱。</view>
     </view>
     <view class="borrowRight">
-      <image src="../images/right-arrow.png" class="rightArrow" />
+      <image src="../../images/right-arrow.png" class="rightArrow" />
     </view>
   </view>
 </view>

@@ -13,7 +13,7 @@ Page({
   },
   gotoAgreementPage () {
     wx.navigateTo({
-      url: '/pages/agreement/agreement',
+      url: '/pages/lender/agreement/agreement',
     })
   },
   formInputChange (pm) {
@@ -74,7 +74,7 @@ Page({
       })
     } else {
       wx.redirectTo({
-        url: '/pages/investInfo/investInfo',
+        url: '/pages/lender/investInfo/investInfo',
       })
     }
   },

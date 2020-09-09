@@ -2,12 +2,12 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/editor/editor",
-    "pages/mediation/mediation",
-    "pages/authentication/authentication",
-    "pages/agreement/agreement",
-    "pages/investInfo/investInfo",
-    "pages/investDetail/investDetail"
+    "pages/lender/editor/editor",
+    "pages/lender/mediation/mediation",
+    "pages/lender/authentication/authentication",
+    "pages/lender/agreement/agreement",
+    "pages/lender/investInfo/investInfo",
+    "pages/lender/investDetail/investDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

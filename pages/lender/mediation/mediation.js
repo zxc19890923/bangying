@@ -3,11 +3,11 @@ Page({
     console.log(e)
     if (e.currentTarget.dataset.pm === '1') {
       wx.navigateTo({
-        url: '/pages/authentication/authentication',
+        url: '/pages/lender/authentication/authentication',
       })
     } else {
       wx.navigateTo({
-        url: '/pages/editor/editor'
+        url: '/pages/lender/editor/editor'
       })
     }
   }
