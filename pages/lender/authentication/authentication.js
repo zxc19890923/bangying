@@ -37,7 +37,7 @@ Page({
       this.setData({
         code: pm.detail.value
       })
-      if (this.data.code) {
+      if (this.data.code.length === 6) {
         this.setData({
           codeError: false
         })
