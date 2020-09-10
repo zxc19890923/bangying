@@ -10,7 +10,8 @@
         <input bindinput="formInputChange" data-field="{{code}}" data-type="code" class="weui-input" placeholder="验证码" maxlength="6" class="{{codeError ? 'errorColor': ''}}"/>
         <view wx:if="{{!disabled}}" slot="footer" class="weui-vcode-btn" bindtap="getCode">{{time}}</view>
         <view wx:if="{{disabled}}" slot="footer" class="weui-vcode-btn">
-          <text style="color: #999">已发送 {{time}}</text>
+          <text style="color: #999;">已发送</text>
+          <text style="color: #999; display: inline-block; width: 80rpx;">{{time}}</text>
         </view>
       </mp-cell>
       <mp-cell>
