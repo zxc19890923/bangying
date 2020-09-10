@@ -1,7 +1,7 @@
 {
   "navigationBarTitleText": "帮瀛调解中心",
   "usingComponents": {
-    "editor": "../lender/editor/editor",
+    "editor": "../lender/editor/editor", 
     "mediation": "../lender/mediation/mediation",
     "authentication": "../lender/authentication/authentication",
     "agreement": "../lender/agreement/agreement",

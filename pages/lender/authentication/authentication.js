@@ -1,20 +1,25 @@
+// 手机号码
+const phoneReg = /^1[3|4|5|6|7|8]\d{9}$/
+// 身份证
+const idCardReg = /(^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$)|(^[1-9]\d{5}\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}$)/
+// 银行卡号
+const cardReg = /^([1-9]{1})(\d{15}|\d{18})$/
 Page({
   data: {
     currentTime: 60,
     time: '获取验证码',
     disabled: false,
     agreeState: false,
-    error: '',
     phone: '',
     code: '',
     name: '',
     idCard: '',
-    card: ''
-  },
-  gotoAgreementPage () {
-    wx.navigateTo({
-      url: '/pages/lender/agreement/agreement',
-    })
+    card: '',
+    phoneError: false,
+    codeError: false,
+    nameError: false,
+    idCardError: false,
+    cardError: false
   },
   formInputChange (pm) {
     console.log(pm)
@@ -22,59 +27,91 @@ Page({
       this.setData({
         phone: pm.detail.value
       })
+      if (phoneReg.test(this.data.phone)) {
+        this.setData({
+          phoneError: false
+        })
+      }
     }
     if (pm.currentTarget.dataset.type === 'code') {
       this.setData({
         code: pm.detail.value
       })
+      if (this.data.code) {
+        this.setData({
+          codeError: false
+        })
+      }
     }
     if (pm.currentTarget.dataset.type === 'name') {
       this.setData({
         name: pm.detail.value
       })
+      if (this.data.name) {
+        this.setData({
+          nameError: false
+        })
+      }
     }
     if (pm.currentTarget.dataset.type === 'idCard') {
       this.setData({
         idCard: pm.detail.value
       })
+      if (idCardReg.test(this.data.idCard)) {
+        this.setData({
+          idCardError: false
+        })
+      }
     }
     if (pm.currentTarget.dataset.type === 'card') {
       this.setData({
         card: pm.detail.value
       })
+      if (cardReg.test(this.data.card)) {
+        this.setData({
+          cardError: false
+        })
+      }
     }
   },
   gotoInvestList () {
-    // 手机号码
-    let phoneReg = /^1[3|4|5|6|7|8]\d{9}$/
-    // 身份证
-    let idCardReg = /(^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$)|(^[1-9]\d{5}\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}$)/
-    // 银行卡号
-    let cardReg = /^([1-9]{1})(\d{15}|\d{18})$/
+    this.setData({
+      error: '请检查输入格式'
+    })
     if (this.data.agreeState === false) {
-    } else if (!(phoneReg.test(this.data.phone))) {
+      return false
+    }
+    if (!(phoneReg.test(this.data.phone))) {
       this.setData({
-        error: '手机号码格式不正确'
+        phoneError: true
       })
-    } else if (this.data.code === '') {
+    }
+    if (this.data.code.length !== 6) {
       this.setData({
-        error: '验证码不正确'
+        codeError: true
       })
-    } else if (this.data.name === '') {
+    }
+    if (this.data.name.length < 3 || this.data.name.length > 30) {
       this.setData({
-        error: '姓名格式不正确'
+        nameError: true
       })
-    } else if (!(idCardReg.test(this.data.idCard))) {
+    }
+    if (!(idCardReg.test(this.data.idCard))) {
       this.setData({
-        error: '身份证号码不正确'
+        idCardError: true
       })
-    } else if (!(cardReg.test(this.data.card))) {
+    }
+    if (!(cardReg.test(this.data.card))) {
       this.setData({
-        error: '银行卡格式不正确'
+        cardError: true
       })
-    } else {
+    }
+    if (!this.data.phoneError && !this.data.nameError && !this.data.codeError && !this.data.idCardError && !this.data.cardError) {
+      this.setData({
+        error: ''
+      })
       wx.redirectTo({
-        url: '/pages/lender/investInfo/investInfo',
+        url: '/pages/lender/investInfo/investInfo'
       })
     }
   },
@@ -105,6 +142,12 @@ Page({
     console.log(e.currentTarget.dataset.state)
     this.setData({
       agreeState: !e.currentTarget.dataset.state
+    })
+  },
+  // 协议
+  gotoAgreementPage () {
+    wx.navigateTo({
+      url: '/pages/lender/agreement/agreement',
     })
   }
 })

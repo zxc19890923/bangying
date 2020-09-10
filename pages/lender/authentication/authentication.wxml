@@ -2,35 +2,38 @@
   <mp-form class="authentForm">
     <mp-cells title="验证个人信息" footer="实名认证的说明文字站位">
       <mp-cell>
-        <image slot="icon" src="../../images/phone.png" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
-        <input bindinput="formInputChange" data-field="{{phone}}" data-type="phone" class="weui-input" placeholder="出借人手机号码" value="{{phone}}" maxlength="11"/>
+        <image slot="icon" src="{{phoneError === true ? '../../images/error_phone.png' : '../../images/phone.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="{{phone}}" data-type="phone" class="weui-input" placeholder="出借人手机号码" value="{{phone}}" maxlength="11" class="{{phoneError ? 'errorColor': ''}}"/>
       </mp-cell>
       <mp-cell ext-class="weui-cell_vcode">
-        <image slot="icon" src="../../images/power.png" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
-        <input bindinput="formInputChange" data-field="{{code}}" data-type="code" class="weui-input" placeholder="验证码" maxlength="6"/>
+        <image slot="icon" src="{{codeError === true ? '../../images/error_code.png' : '../../images/code.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="{{code}}" data-type="code" class="weui-input" placeholder="验证码" maxlength="6" class="{{codeError ? 'errorColor': ''}}"/>
         <view wx:if="{{!disabled}}" slot="footer" class="weui-vcode-btn" bindtap="getCode">{{time}}</view>
-        <view wx:if="{{disabled}}" slot="footer" class="weui-vcode-btn">{{time}}</view>
+        <view wx:if="{{disabled}}" slot="footer" class="weui-vcode-btn">
+          <text style="color: #999">已发送 {{time}}</text>
+        </view>
       </mp-cell>
       <mp-cell>
-        <image slot="icon" src="../../images/user.png" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
-        <input bindinput="formInputChange" data-field="{{name}}" data-type="name" value="{{name}}" class="weui-input" placeholder="出借人姓名" maxlength="10"/>
+        <image slot="icon" src="{{nameError === true ? '../../images/error_user.png' : '../../images/user.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="{{name}}" data-type="name" value="{{name}}" class="weui-input" placeholder="出借人姓名" maxlength="10" class="{{nameError ? 'errorColor': ''}}"/>
       </mp-cell>
       <mp-cell>
-        <image slot="icon" src="../../images/identity.png" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
-        <input bindinput="formInputChange" data-field="{{idCard}}" data-type="idCard" value="{{idCard}}" class="weui-input" placeholder="出借人身份照吗"/>
+        <image slot="icon" src="{{idCardError === true ? '../../images/error_idCard.png' : '../../images/identity.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="{{idCard}}" data-type="idCard" value="{{idCard}}" class="weui-input" placeholder="出借人身份照吗" class="{{idCardError ? 'errorColor': ''}}"/>
       </mp-cell>
       <mp-cell>
-        <image slot="icon" src="../../images/card.png" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
-        <input bindinput="formInputChange" data-field="{{card}}" data-type="card" class="weui-input" value="{{card}}" placeholder="开户姓名与出借人一致的银行卡号"/>
+        <image slot="icon" src="{{cardError === true ? '../../images/error_card.png' : '../../images/card.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="{{card}}" data-type="card" class="weui-input" value="{{card}}" placeholder="开户姓名与出借人一致的银行卡号" class="{{cardError ? 'errorColor': ''}}"/>
       </mp-cell>
     </mp-cells>
     <view class="authentBottom">
       <view class="authentBottomTop">
-        <radio id="agree" value="{{agreeState}}" checked="{{agreeState}}" data-state="{{agreeState}}" bindtap="changeRadioValue" />
-        <label for="agree"><text bindtap="gotoAgreementPage" style="margin-left: 10rpx; color: #333;">同意通过帮瀛平台认领债权</text></label>
+        <radio value="{{agreeState}}" checked="{{agreeState}}" data-state="{{agreeState}}" bindtap="changeRadioValue" />
+        <label><text bindtap="gotoAgreementPage" style="margin-left: 10rpx; color: #333;">同意通过帮瀛平台认领债权</text></label>
       </view>
       <!-- <view class="authentButton" > -->
-        <button type="primary" style="width: calc(100% - 80rpx)" bindtap="gotoInvestList" disabled="{{!agreeState}}">下一步</button>
+      <button type="primary" style="width: calc(100% - 80rpx)" bindtap="gotoInvestList" wx:if="{{phone && code && name && idCard && card && agreeState}}">下一步</button>
+      <button type="primary" style="width: calc(100% - 80rpx); opacity: 0.5" wx:if="{{!phone || !code || !name || !idCard || !card || !agreeState}}">下一步</button>
       <!-- </view> -->
     </view>
   </mp-form>
