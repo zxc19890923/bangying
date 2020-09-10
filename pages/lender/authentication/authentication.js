@@ -75,35 +75,37 @@ Page({
     }
   },
   gotoInvestList () {
-    this.setData({
-      error: '请检查输入格式'
-    })
     if (this.data.agreeState === false) {
       return false
     }
     if (!(phoneReg.test(this.data.phone))) {
       this.setData({
-        phoneError: true
+        phoneError: true,
+        error: '数据格式错误'
       })
     }
     if (this.data.code.length !== 6) {
       this.setData({
-        codeError: true
+        codeError: true,
+        error: '数据格式错误'
       })
     }
     if (this.data.name.length < 3 || this.data.name.length > 30) {
       this.setData({
-        nameError: true
+        nameError: true,
+        error: '数据格式错误'
       })
     }
     if (!(idCardReg.test(this.data.idCard))) {
       this.setData({
-        idCardError: true
+        idCardError: true,
+        error: '数据格式错误'
       })
     }
     if (!(cardReg.test(this.data.card))) {
       this.setData({
-        cardError: true
+        cardError: true,
+        error: '数据格式错误'
       })
     }
     if (!this.data.phoneError && !this.data.nameError && !this.data.codeError && !this.data.idCardError && !this.data.cardError) {
