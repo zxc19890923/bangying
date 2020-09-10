@@ -6,9 +6,22 @@ Page({
         url: '/pages/lender/authentication/authentication',
       })
     } else {
-      wx.navigateTo({
-        url: '/pages/lender/editor/editor'
+      // wx.showToast({
+      //   title: '成功',
+      //   icon: 'success',
+      //   duration: 2000,
+      //   mask: true
+      // })
+      wx.showLoading({
+        title: '加载中...',
+        mask: true
       })
+      setTimeout(() => {
+        wx.hideLoading({
+          success: (res) => {},
+        })
+      }, 3000)
     }
-  }
+  },
+  onLoad () {}
 })

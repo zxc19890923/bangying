@@ -7,7 +7,8 @@
     "pages/lender/authentication/authentication",
     "pages/lender/agreement/agreement",
     "pages/lender/investInfo/investInfo",
-    "pages/lender/investDetail/investDetail"
+    "pages/lender/investDetail/investDetail",
+    "pages/lender/success/success"
   ],
   "window":{
     "backgroundTextStyle":"light",

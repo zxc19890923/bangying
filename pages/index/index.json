@@ -6,6 +6,7 @@
     "authentication": "../lender/authentication/authentication",
     "agreement": "../lender/agreement/agreement",
     "investInfo": "../lender/investInfo/investInfo",
-    "investDetail": "../lender/investDetail/investDetail"
+    "investDetail": "../lender/investDetail/investDetail",
+    "success": "../lender/success/success"
   }
 }

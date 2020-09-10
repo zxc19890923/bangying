@@ -1,14 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-  <!-- <view class="userinfo"> -->
-    <!-- <text class="user-motto" bindtap="gotoEditor">{{motto}}</text> -->
-    <!-- <mp-loading type="circle"></mp-loading> -->
-    <!-- <mp-loading duration="{{900}}" ext-class="demo0" type="dot-gray" show="{{show}}" animated="{{animated}}"></mp-loading> -->
-    <!-- <mp-loading type="dot-white" ext-class="demo1"></mp-loading> -->
-    <!-- <mp-dialog title="是否接受授权" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}"> -->
-        <!-- <view>test content</view> -->
-    <!-- </mp-dialog> -->
-  <!-- </view> -->
   <view class="main">
     <mediation></mediation>
     <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
@@ -16,5 +7,6 @@
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block> -->
+    <success></success>
   </view>
 </view>
