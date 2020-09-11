@@ -7,6 +7,6 @@
     "agreement": "../lender/agreement/agreement",
     "investInfo": "../lender/investInfo/investInfo",
     "investDetail": "../lender/investDetail/investDetail",
-    "success": "../lender/success/success"
+    "platform": "../lender/platform/platform"
   }
 }

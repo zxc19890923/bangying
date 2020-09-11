@@ -1,0 +1,43 @@
+.platformContainer {
+  padding: 0 30rpx;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #f6f8f9;
+  height: 100%;
+}
+.platformTop {
+  flex: 1;
+  overflow: hidden;
+}
+.platformButton {
+  height: 140rpx;
+  flex-shrink: 0;
+  margin: 40rpx 0rpx;
+  text-align: center;
+}
+.platformText {
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 30rpx;
+}
+.platformHeader {
+  font-size: 36rpx;
+  color: #333;
+  margin: 40rpx 0 20rpx 0;
+  text-align: center;
+}
+.platformTitle {
+  font-size: 30rpx;
+  color: #333;
+  margin: 40rpx 0rpx 20rpx 0;
+}
+.platformTextPri {
+  color: #3D80CE;
+}
+.platformDec {
+  font-size: 24rpx;
+  color: #666;
+  text-indent: 1.4rem;
+}

@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/lender/editor/editor",
@@ -8,14 +8,15 @@
     "pages/lender/agreement/agreement",
     "pages/lender/investInfo/investInfo",
     "pages/lender/investDetail/investDetail",
-    "pages/lender/success/success"
+    "pages/lender/platform/platform"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "争议分流解决平台",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
+  "usingComponents": {},
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "useExtendedLib": {
