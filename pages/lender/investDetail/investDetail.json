@@ -1,8 +1,8 @@
 {
   "navigationBarTitleText": "查看详情",
   "usingComponents": {
-    "mp-form": "/miniprogram_npm/weui-miniprogram/form/form",
-    "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
-    "mp-cell": "/miniprogram_npm/weui-miniprogram/cell/cell"
+    "mp-form": "weui-miniprogram/form/form",
+    "mp-cells": "weui-miniprogram/cells/cells",
+    "mp-cell": "weui-miniprogram/cell/cell"
   } 
 }
