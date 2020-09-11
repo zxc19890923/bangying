@@ -20,4 +20,13 @@
       <image src="../../images/right-arrow.png" class="rightArrow" />
     </view>
   </view>
+  <view class="borrow" style="border: none;" bindtap="gotoAuthenticationPage" data-pm="3">
+    <view class="borrowLeft">
+      <view class="borrowLeftTop">我是调解员</view>
+      <view class="borrowLeftBottom">欠钱的还钱，收账的收账，和气生财。</view>
+    </view>
+    <view class="borrowRight">
+      <image src="../../images/right-arrow.png" class="rightArrow" />
+    </view>
+  </view>
 </view>

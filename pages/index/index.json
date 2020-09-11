@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "帮瀛调解中心",
+  "navigationBarTitleText": "平台介绍",
   "usingComponents": {
     "editor": "../lender/editor/editor", 
     "mediation": "../lender/mediation/mediation",
@@ -7,6 +7,7 @@
     "agreement": "../lender/agreement/agreement",
     "investInfo": "../lender/investInfo/investInfo",
     "investDetail": "../lender/investDetail/investDetail",
-    "platform": "../lender/platform/platform"
+    "platform": "../lender/platform/platform",
+    "navigationBar": "../../components/navigationBar/navigationBar"
   }
 }

@@ -4,6 +4,7 @@
   flex-direction: column;
   overflow: hidden;
   background: #f6f8f9;
+  height: 100%;
 }
 .agreementTop {
   flex: 1;

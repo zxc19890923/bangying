@@ -10,6 +10,11 @@ Page({
       url: '/pages/lender/investDetail/investDetail?item=' + str,
     })
   },
+  onReady () {
+    wx.hideHomeButton({
+      success: (res) => {},
+    })
+  },
   onLoad () {
     this.setData({
       userInfo: app.globalData.userInfo

@@ -22,3 +22,22 @@
 .myForm {
   width: 100%;
 }
+
+.tabar {
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  text-align: center;
+  font-size: 22rpx;
+  background-color: #fff;
+}
+
+.tabar view {
+  padding: 25rpx 0rpx;
+  color: #000;
+  font-size: 22rpx;
+}
+
+.tabar .active {
+  color: #fff;
+}

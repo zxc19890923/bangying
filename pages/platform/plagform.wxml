@@ -1,6 +1,0 @@
-<!--pages/platform/plagform.js.wxml-->
-<view class="container">
-  <view class="platformHeader">分流平台</view>
-  <view class="platformTitle">一、服务条款的确认及接受</view>
-  <View class="platformDec">帮瀛是调解中心、法院、P2P平台指定的唯一催收平台。</View>
-</view>>

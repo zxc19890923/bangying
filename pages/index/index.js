@@ -17,7 +17,8 @@ Page({
     dialogShow: false,
     buttons: [{text: '取消'}, {text: '确定'}],
     time: '12:00',
-    userInfoApi: {}
+    userInfoApi: {},
+    topbarHeight: 0
   },
   // 时间控件
   bindTimeChange (e) {
@@ -61,6 +62,9 @@ Page({
     }
   },
   onLoad: function () {
+    this.setData({
+      topbarHeight: wx.getSystemInfoSync().statusBarHeight
+    })
     // 调用接口，获取登录信息。
     http.getUserInfoApi(
       {

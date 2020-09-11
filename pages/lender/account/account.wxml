@@ -1,0 +1,19 @@
+<view class="container">
+  <mp-form class="authentForm">
+    <mp-cells title="绑定收款账户" footer="注意：此账户是收款的唯一账户">
+      <mp-cell>
+        <image slot="icon" src="{{nameError === true ? '../../images/error_user.png' : '../../images/user.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="{{name}}" data-type="name" value="{{name}}" class="weui-input" placeholder="收款账户的开户人姓名" maxlength="10" class="{{nameError ? 'errorColor': ''}}"/>
+      </mp-cell>
+      <mp-cell>
+        <image slot="icon" src="{{cardError === true ? '../../images/error_card.png' : '../../images/card.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+        <input bindinput="formInputChange" data-field="{{card}}" data-type="card" class="weui-input" value="{{card}}" placeholder="开户姓名与出借人一致的银行卡号" class="{{cardError ? 'errorColor': ''}}"/>
+      </mp-cell>
+    </mp-cells>
+    <view class="authentBottom">
+      <button type="primary" style="width: calc(100% - 80rpx)" bindtap="gotoInvestList" wx:if="{{name && card}}">下一步</button>
+      <button type="primary" style="width: calc(100% - 80rpx); opacity: 0.5" wx:if="{{!name || !card}}">下一步</button>
+    </view>
+  </mp-form>
+  <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+</view>

@@ -8,12 +8,12 @@
     "pages/lender/agreement/agreement",
     "pages/lender/investInfo/investInfo",
     "pages/lender/investDetail/investDetail",
-    "pages/lender/platform/platform"
+    "pages/lender/platform/platform",
+    "pages/lender/account/account"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "争议分流解决平台",
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {},

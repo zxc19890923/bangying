@@ -14,7 +14,7 @@ Page({
       // })
       wx.showLoading({
         title: '加载中...',
-        mask: true
+        mask: false
       })
       setTimeout(() => {
         wx.hideLoading({
@@ -23,5 +23,10 @@ Page({
       }, 3000)
     }
   },
-  onLoad () {}
+  onLoad () {},
+  onReady () {
+    wx.hideHomeButton({
+      success: (res) => {},
+    })
+  }
 })

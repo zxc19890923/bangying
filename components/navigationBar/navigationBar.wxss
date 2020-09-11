@@ -1,0 +1,24 @@
+.ch_top {
+  background-color: #ffdd00;
+}
+.tobar{
+  position:relative;
+}
+.back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+.left_custom_class {
+  font-weight: 700;
+  height: 100%;
+  font-size: 36rpx;
+}
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36rpx;
+}

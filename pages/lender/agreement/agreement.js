@@ -1,7 +1,12 @@
 Page({
   goBackPage () {
-    wx.navigateBack({
-      delta: 0,
+    wx.redirectTo({
+      url: '/pages/lender/investInfo/investInfo',
+    })
+  },
+  onReady () {
+    wx.hideHomeButton({
+      success: (res) => {},
     })
   }
 })

@@ -2,8 +2,6 @@
 const phoneReg = /^1[3|4|5|6|7|8]\d{9}$/
 // 身份证
 const idCardReg = /(^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$)|(^[1-9]\d{5}\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}$)/
-// 银行卡号
-const cardReg = /^([1-9]{1})(\d{15}|\d{18})$/
 Page({
   data: {
     currentTime: 60,
@@ -14,12 +12,11 @@ Page({
     code: '',
     name: '',
     idCard: '',
-    card: '',
     phoneError: false,
     codeError: false,
     nameError: false,
     idCardError: false,
-    cardError: false
+    error: ''
   },
   formInputChange (pm) {
     console.log(pm)
@@ -63,21 +60,8 @@ Page({
         })
       }
     }
-    if (pm.currentTarget.dataset.type === 'card') {
-      this.setData({
-        card: pm.detail.value
-      })
-      if (cardReg.test(this.data.card)) {
-        this.setData({
-          cardError: false
-        })
-      }
-    }
   },
   gotoInvestList () {
-    if (this.data.agreeState === false) {
-      return false
-    }
     if (!(phoneReg.test(this.data.phone))) {
       this.setData({
         phoneError: true,
@@ -102,18 +86,12 @@ Page({
         error: '数据格式错误'
       })
     }
-    if (!(cardReg.test(this.data.card))) {
-      this.setData({
-        cardError: true,
-        error: '数据格式错误'
-      })
-    }
-    if (!this.data.phoneError && !this.data.nameError && !this.data.codeError && !this.data.idCardError && !this.data.cardError) {
+    if (!this.data.phoneError && !this.data.nameError && !this.data.codeError && !this.data.idCardError) {
       this.setData({
         error: ''
       })
-      wx.redirectTo({
-        url: '/pages/lender/investInfo/investInfo'
+      wx.reLaunch({
+        url: '/pages/lender/account/account'
       })
     }
   },
@@ -138,18 +116,5 @@ Page({
         })
       }
     }, 1000)
-  },
-  // 同意协议
-  changeRadioValue (e) {
-    console.log(e.currentTarget.dataset.state)
-    this.setData({
-      agreeState: !e.currentTarget.dataset.state
-    })
-  },
-  // 协议
-  gotoAgreementPage () {
-    wx.navigateTo({
-      url: '/pages/lender/agreement/agreement',
-    })
   }
 })

@@ -7,7 +7,7 @@
   </view>
   <view class="investListRefresh">
     <view class="refreshLeft">
-      投资信息
+      已认领的投资信息
     </view>
     <view class="refreshCenter">
       <image src="../../images/refresh.png" class="refreshIcon" />

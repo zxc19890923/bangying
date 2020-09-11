@@ -1,0 +1,11 @@
+<view class="ch_top">
+  <view style="height: {{statusBarHeight}}px;"></view>
+  <view class="tobar" style="height: {{toBarHeight}}px;">
+    <view class="title" style="height: {{toBarHeight}}px;line-height: {{toBarHeight}}px;">
+      <text>搜索</text>
+    </view>
+    <view class="back">
+      <van-icon custom-class="left_custom_class" custom-style="line-height: {{toBarHeight}}px;"  name="arrow-left"/>
+    </view>
+  </view>
+</view>

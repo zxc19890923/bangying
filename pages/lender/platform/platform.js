@@ -64,7 +64,7 @@ Page({
 
   },
   goBackListPage () {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/lender/mediation/mediation'
     })
   }
