@@ -1,3 +1,5 @@
+// 导入封装接口
+import http from './utils/api'
 //app.js
 App({
   // 初始化完成以后出发，全局只触发一次
@@ -12,28 +14,18 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         console.log(res, 'wx.login', '返回code')
-        console.log(wx.getSystemInfoSync())
-        console.log(wx.env)
-      }
-    })
-    // 获取用户信息
-    wx.getSetting({
-      success: res => {
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
-          wx.getUserInfo({
-            success: res => {
-              // 可以将 res 发送给后台解码出 unionId，globalData全局变量
-              this.globalData.userInfo = res.userInfo
-
-              // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-              // 所以此处加入 callback 以防止这种情况
-              if (this.userInfoReadyCallback) {
-                this.userInfoReadyCallback(res)
-              }
-            }
-          })
+        let params = {
+          appid: 'wx383d463f0fb06872',
+          secret: '3677240bc4bb5605d5f40bac4cce6434',
+          js_code: res.code,
+          grant_type: 'authorization_code'
         }
+        http.getOpenId({
+          data: params,
+          success: success => {
+            console.log(success, '获取code信息')
+          }
+        })
       }
     })
   },

@@ -24,7 +24,7 @@ Page({
       this.setData({
         phone: pm.detail.value
       })
-      if (phoneReg.test(this.data.phone)) {
+       if (phoneReg.test(this.data.phone)) {
         this.setData({
           phoneError: false
         })

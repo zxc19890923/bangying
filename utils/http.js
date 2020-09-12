@@ -1,7 +1,3 @@
-const PRO = ''
-const TEST = 'https://api.bangying.tech/new_php_test/index.php'
-const DEV = ''
-const SIM = ''
 module.exports = {
   http(url, method, params) {
     let token = 'token' // token
@@ -21,7 +17,7 @@ module.exports = {
     }
     // 封装get、post请求。
     wx.request({
-      url: TEST + url,
+      url: url,
       method: method === 'post' ? 'post' : 'get',
       data,
       header: {

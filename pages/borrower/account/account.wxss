@@ -1,0 +1,25 @@
+.authentForm {
+  width: 100%;
+}
+.authentBottom {
+  position: absolute;
+  bottom: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.authentBottomTop {
+  margin-bottom: 30rpx;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.authentButton {
+  margin: 0 40rpx;
+  width: 100%;
+}
+.errorColor {
+  color: #F05A50
+}
