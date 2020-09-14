@@ -1,0 +1,45 @@
+.input-box {
+  width: 690rpx;
+  background: #ffffff;
+  box-shadow: 0px -1px 0px 0px #e5e5e5 inset;
+  margin: 300rpx auto 0;
+  position: relative;
+}
+.input-box .weui-input {
+  height: 90rpx;
+  line-height: 90rpx;
+  padding-left: 100rpx;
+}
+.icon-code {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next-btn {
+  width: 670rpx !important;
+  position: absolute;
+  bottom: 40rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .dialog--weui-dialog {
+  transform: scaleX(1) translateY(-80%);
+}
+.name-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35rpx;
+  color: #000;
+}
+.name-input {
+  width: 70rpx;
+  height: 70rpx;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4rpx;
+  margin: 0 40rpx;
+}

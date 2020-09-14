@@ -5,6 +5,10 @@ Page({
       wx.navigateTo({
         url: '/pages/lender/authentication/authentication',
       })
+    } else if (e.currentTarget.dataset.pm === '4') {
+      wx.navigateTo({
+        url: '/pages/repayment/repayment-code'
+      })
     } else {
       // wx.showToast({
       //   title: '成功',

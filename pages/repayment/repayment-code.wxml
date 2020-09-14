@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="input-box">
+    <image class="icon-code" src="../images/code.png"></image>
+    <input class="weui-input" bindinput="bindKeyInput" auto-focus placeholder="请输入还款码"/>
+  </view>
+  <button class="next-btn" bindtap="nextFn" type="primary" disabled="{{!code}}">下一步</button>
+  <mp-dialog title="姓名校验" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}" mask-closable="{{false}}">
+    <view style="font-size: 30rpx">为确保资金安全，请补全对方姓名</view>
+    <view class="name-group">
+      <text>王</text><input class="name-input" bindinput="bindNameKeyInput" auto-focus type="text"/><text>国</text>
+    </view>
+  </mp-dialog>
+</view>
