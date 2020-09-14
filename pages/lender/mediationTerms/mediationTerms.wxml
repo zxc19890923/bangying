@@ -1,0 +1,36 @@
+<mp-form class="mediationTerms">
+  <mp-cells>
+    <mp-cell>
+      <view class="termsItem">
+        <view class="termsHeader">基本信息</view>
+      </view>
+    </mp-cell>
+    <mp-cell>
+      <view class="termsItem">
+        <view class="termsItemOne">本金</view>
+        <view class="termsItemTwo">999.99</view>
+        <view class="termsItemThree">
+          我同意
+        </view>
+      </view>
+    </mp-cell>
+  </mp-cells>
+  <mp-cells>
+    <mp-cell>
+      <view class="termsItem">
+        <view class="termsHeader">基本信息</view>
+      </view>
+    </mp-cell>
+    <mp-cell>
+      <view class="termsItem">
+        <view class="termsItemOne">本金</view>
+        <view class="termsItemTwo">999.99</view>
+        <view class="termsItemThree">
+          我同意
+        </view>
+      </view>
+    </mp-cell>
+    <mp-cell link hover value="仲裁协议">
+    </mp-cell>
+  </mp-cells>
+</mp-form>

@@ -1,0 +1,13 @@
+/* pages/lender/mediationTerms/mediationTerms.wxss */
+.termsHeader {
+  font-size: 26rpx;
+  color: #999;
+}
+.termsItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.termsItemOne, .termsItemTwo, .termsItemThree {
+  flex: 1;
+}

@@ -11,7 +11,8 @@
     "pages/lender/platform/platform",
     "pages/lender/account/account",
     "pages/lender/investTab/investTab",
-    "pages/lender/userCenter/userCenter"
+    "pages/lender/userCenter/userCenter",
+    "pages/lender/mediationTerms/mediationTerms"
   ],
   "window": {
     "backgroundTextStyle": "light",

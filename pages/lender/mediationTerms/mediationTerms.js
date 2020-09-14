@@ -1,4 +1,4 @@
-// pages/lender/platform/platform.js
+// pages/lender/mediationTerms/mediationTerms.js
 Page({
 
   /**
@@ -25,10 +25,8 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow () {
-    wx.hideHomeButton({
-      success: (res) => {},
-    })
+  onShow: function () {
+
   },
 
   /**
@@ -64,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  goBackListPage () {
-    wx.redirectTo({
-      url: '/pages/lender/mediationTerms/mediationTerms'
-    })
   }
 })
