@@ -1,10 +1,10 @@
 Page({
   goBackPage () {
-    wx.redirectTo({
+    wx.reLaunch({
       url: '/pages/lender/investInfo/investInfo',
     })
   },
-  onReady () {
+  onShow () {
     wx.hideHomeButton({
       success: (res) => {},
     })

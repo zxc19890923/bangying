@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "绑定收款账户",
+  "navigationBarTitleText": "注册",
   "usingComponents": {
     "mp-form": "weui-miniprogram/form/form",
     "mp-cells": "weui-miniprogram/cells/cells",

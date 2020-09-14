@@ -1,5 +1,5 @@
 Page({
   onLoad (options) {
-    console.log(JSON.parse(options.item))
+    // console.log(JSON.parse(options))
   }
 })

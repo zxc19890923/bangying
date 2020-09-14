@@ -3,15 +3,15 @@
     <mp-cells title="绑定登录手机">
       <mp-cell>
         <image slot="icon" src="{{nameError === true ? '../../images/error_user.png' : '../../images/user.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
-        <input bindinput="formInputChange" data-field="{{name}}" data-type="name" value="{{name}}" class="weui-input" placeholder="出借人姓名" maxlength="10" class="{{nameError ? 'errorColor': ''}}"/>
+        <input bindinput="formInputChange" data-field="{{name}}" data-type="name" value="{{name}}" class="weui-input" placeholder="P2P平台预留的姓名" maxlength="10" class="{{nameError ? 'errorColor': ''}}"/>
       </mp-cell>
       <mp-cell>
         <image slot="icon" src="{{idCardError === true ? '../../images/error_idCard.png' : '../../images/identity.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
-        <input bindinput="formInputChange" data-field="{{idCard}}" data-type="idCard" value="{{idCard}}" class="weui-input" placeholder="出借人身份证号码" class="{{idCardError ? 'errorColor': ''}}"/>
+        <input bindinput="formInputChange" data-field="{{idCard}}" data-type="idCard" value="{{idCard}}" class="weui-input" placeholder="P2P平台预留的身份证号码" class="{{idCardError ? 'errorColor': ''}}"/>
       </mp-cell>
       <mp-cell>
         <image slot="icon" src="{{phoneError === true ? '../../images/error_phone.png' : '../../images/phone.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
-        <input bindinput="formInputChange" data-field="{{phone}}" data-type="phone" class="weui-input" placeholder="出借人手机号码" value="{{phone}}" maxlength="11" class="{{phoneError ? 'errorColor': ''}}"/>
+        <input bindinput="formInputChange" data-field="{{phone}}" data-type="phone" class="weui-input" placeholder="P2P平台预留的手机号码" value="{{phone}}" maxlength="11" class="{{phoneError ? 'errorColor': ''}}"/>
       </mp-cell>
       <mp-cell ext-class="weui-cell_vcode">
         <image slot="icon" src="{{codeError === true ? '../../images/error_code.png' : '../../images/code.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>

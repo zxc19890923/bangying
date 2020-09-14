@@ -10,7 +10,7 @@ Page({
       url: '/pages/lender/investDetail/investDetail?item=' + str,
     })
   },
-  onReady () {
+  onShow () {
     wx.hideHomeButton({
       success: (res) => {},
     })

@@ -23,10 +23,5 @@ Page({
       }, 3000)
     }
   },
-  onLoad () {},
-  onReady () {
-    wx.hideHomeButton({
-      success: (res) => {},
-    })
-  }
+  onLoad () {}
 })

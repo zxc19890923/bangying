@@ -53,10 +53,20 @@
   position: relative;
   top: 6rpx;
 }
-.investListLeftMoneyNum {
+/* .investListLeftMoneyNum {
   color: #222;
   font-size: 48rpx;
   margin-left: 5rpx;
+} */
+.firstText {
+  font-size: 34rpx;
+  color: #999;
+  font-weight: 400rpx;
+}
+.secondText {
+  font-size: 34rpx;
+  color: #09BB07;
+  font-weight: 600;
 }
 .investListLeftMoneyState {
   margin-left: 10px;
@@ -65,11 +75,15 @@
   font-size: 24rpx;
   color: #666;
 }
+.investlistCenter {
+  flex-shrink: 0;
+}
 .investListRight {
   width: 60rpx;
   text-align: right;
   color: #c7c7c7;
   flex-shrink: 0;
+  font-size: 0;
 }
 .refreshIcon {
   width: 28rpx;
