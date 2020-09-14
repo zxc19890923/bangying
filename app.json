@@ -12,7 +12,9 @@
     "pages/lender/account/account",
     "pages/lender/investTab/investTab",
     "pages/lender/userCenter/userCenter",
-    "pages/lender/mediationTerms/mediationTerms"
+    "pages/lender/mediationTerms/mediationTerms",
+    "pages/lender/addPhone/addPhone",
+    "pages/lender/deletePhone/deletePhone"
   ],
   "window": {
     "backgroundTextStyle": "light",

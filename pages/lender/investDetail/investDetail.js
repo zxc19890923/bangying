@@ -1,6 +1,5 @@
 Page({
   onLoad (options) {
-    // console.log(JSON.parse(options))
   },
   gotoAgreePage () {
     wx.navigateTo({

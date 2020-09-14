@@ -1,0 +1,18 @@
+<view class="container" style="position: relative; top: -8px; display: flex;">
+  <view class="addPhoneTop">
+    <mp-form class="authentForm">
+      <mp-cells>
+        <mp-cell>
+          <text class="userCenterHeaderText">号码验证</text>
+        </mp-cell>
+        <mp-cell title="手机号码">
+          {{phone}}
+        </mp-cell>
+      </mp-cells>
+    </mp-form>
+  </view>
+  <view class="addPhoneBottom">
+    <button type="warn" style="width: calc(100% - 80rpx);" bindtap="deletePhone">确认添加</button>
+  </view>
+  <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+</view>

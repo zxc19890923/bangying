@@ -1,4 +1,4 @@
-// pages/lender/userCenter/userCenter.js
+// pages/lender/deletePhone/deletePhone.js
 Page({
 
   /**
@@ -25,10 +25,8 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow () {
-    wx.hideHomeButton({
-      success: (res) => {},
-    })
+  onShow: function () {
+
   },
 
   /**
@@ -65,14 +63,9 @@ Page({
   onShareAppMessage: function () {
 
   },
-  gotoAddPhonePage () {
-    wx.navigateTo({
-      url: '/pages/lender/addPhone/addPhone',
-    })
-  },
-  gotoDeletePhonePage () {
-    wx.navigateTo({
-      url: '/pages/lender/deletePhone/deletePhone',
+  deletePhone () {
+    wx.navigateBack({
+      delta: 0,
     })
   }
 })

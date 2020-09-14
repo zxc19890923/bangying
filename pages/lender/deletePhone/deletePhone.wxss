@@ -1,0 +1,26 @@
+/* pages/lender/deletePhone/deletePhone.wxss */
+.authentForm {
+  width: 100%;
+}
+.authentButton {
+  margin: 0 40rpx;
+  width: 100%;
+}
+.errorColor {
+  color: #F05A50
+}
+.userCenterHeaderText {
+  color: #999;
+  font-size: 26rpx;
+}
+.addPhoneTop {
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+}
+.addPhoneBottom {
+  height: 80rpx;
+  flex-shrink: 0;
+  margin: 40rpx 0rpx;
+  width: 100%;
+}

@@ -129,6 +129,20 @@
           "id": -1,
           "name": "pages/lender/mediationTerms/mediationTerms",
           "pathName": "pages/lender/mediationTerms/mediationTerms",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/lender/addPhone/addPhone",
+          "pathName": "pages/lender/addPhone/addPhone",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/lender/deletePhone/deletePhone",
+          "pathName": "pages/lender/deletePhone/deletePhone",
           "scene": null
         }
       ]
