@@ -108,6 +108,20 @@
           "id": -1,
           "name": "pages/lender/investDetail/investDetail",
           "pathName": "pages/lender/investDetail/investDetail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/lender/investTab/investTab",
+          "pathName": "pages/lender/investTab/investTab",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/lender/userCenter/userCenter",
+          "pathName": "pages/lender/userCenter/userCenter",
           "scene": null
         }
       ]

@@ -1,7 +1,7 @@
 const app = getApp()
 Page({
   data: {
-    userInfo: {}
+    userInfo: {},
   },
   gotoInvestDetailPage (e) {
     let str = JSON.stringify(e.currentTarget.dataset.item)

@@ -1,0 +1,4 @@
+/* pages/lender/userCenter/userCenter.wxss */
+.infoText {
+  color: #999;
+}

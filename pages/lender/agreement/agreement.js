@@ -1,7 +1,7 @@
 Page({
   goBackPage () {
     wx.reLaunch({
-      url: '/pages/lender/investInfo/investInfo',
+      url: '/pages/lender/investTab/investTab',
     })
   },
   onShow () {

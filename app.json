@@ -9,7 +9,9 @@
     "pages/lender/investInfo/investInfo",
     "pages/lender/investDetail/investDetail",
     "pages/lender/platform/platform",
-    "pages/lender/account/account"
+    "pages/lender/account/account",
+    "pages/lender/investTab/investTab",
+    "pages/lender/userCenter/userCenter"
   ],
   "window": {
     "backgroundTextStyle": "light",

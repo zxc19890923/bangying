@@ -1,42 +1,69 @@
-<view class="container">
+<view>
+  <view class="authentTop">
+    <text class="firstText">23423.33</text>
+    <text class="secondText"> / 9888889</text>
+  </view>
   <mp-form class="authentForm">
-    <mp-cells title="基本信息" footer="">
-      <mp-cell title="出借人" prop="c">
+    <mp-cells>
+      <mp-cell>
+        <text class="authentListHeader">基本信息</text>
+      </mp-cell>
+      <mp-cell title="出借人">
         张旭超
       </mp-cell>
-      <mp-cell title="欠款人" prop="c">
+      <mp-cell title="欠款人">
         马云
       </mp-cell>
-      <mp-cell title="项目状态" prop="c">
+      <mp-cell title="项目状态">
         催收中<text class="errorText">（已发送催收短信）</text>
       </mp-cell>
-      <mp-cell title="交易平台" prop="c">
+      <mp-cell title="交易平台">
         P2P交易平台
       </mp-cell>
-      <mp-cell title="交易日期" prop="c">
+    </mp-cells>
+    <mp-cells footer="本息为依据协议及法律规定计算所得， 如果有异议请联系P2P平台">
+      <mp-cell>
+        <text class="authentListHeader">账单信息</text>
+      </mp-cell>
+      <mp-cell title="出借人">
+        张旭超
+      </mp-cell>
+      <mp-cell title="欠款人">
+        马云
+      </mp-cell>
+      <mp-cell title="项目状态">
+        催收中<text class="errorText">（已发送催收短信）</text>
+      </mp-cell>
+      <mp-cell title="交易平台">
+        P2P交易平台
+      </mp-cell>
+      <mp-cell title="交易日期">
         2015-12-26 10: 00
       </mp-cell>
-      <mp-cell title="欠款总额" prop="c">
+      <mp-cell title="欠款总额">
         32323.20元
         <view slot="footer" style="font-size: 0">
           <image class="infoIcon" src="/pages/images/info.png"></image>
         </view>
       </mp-cell>
-      <mp-cell title="其他项目" prop="c">
+      <mp-cell title="其他项目">
         -
       </mp-cell>
-      <mp-cell title="其他项目" prop="c">
+      <mp-cell title="其他项目">
         -
       </mp-cell>
-      <mp-cell title="其他项目" prop="c">
+      <mp-cell title="其他项目">
         -
       </mp-cell>
-      <mp-cell title="其他项目" prop="c">
+      <mp-cell title="其他项目">
         -
       </mp-cell>
-      <mp-cell title="其他项目" prop="c">
+      <mp-cell title="其他项目">
         -
       </mp-cell>
     </mp-cells>
   </mp-form>
+  <view style="text-align: center; margin: 40rpx 0">
+    <button type="primary" style="width: calc(100% - 80rpx);" bindtap="gotoAgreePage">同意</button>
+  </view>
 </view>
