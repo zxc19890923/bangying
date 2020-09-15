@@ -12,7 +12,7 @@ Page({
       "selectedIconPath": "/pages/images/change_active.png"
     },
     {
-      "text": "我的资产",
+      "text": "我的账单",
       "iconPath": "/pages/images/money_icon.png",
       "selectedIconPath": "/pages/images/money_active.png"
     },
@@ -26,6 +26,9 @@ Page({
     console.log(e, 'tab界面切换', e.detail.index)
     this.setData({
       activeIndex: e.detail.index
+    })
+    wx.setNavigationBarTitle({
+      title: e.detail.item.text
     })
     if (e.detail.index === 0) {
       wx.reLaunch({

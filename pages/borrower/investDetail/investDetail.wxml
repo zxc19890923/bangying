@@ -49,7 +49,7 @@
       <mp-cell title="应收利息">
         123元
         <view slot="footer" style="font-size: 0">
-          <image class="infoIcon" src="/pages/images/info.png"></image>
+          <image class="infoIcon" bindtap="openDialog" src="/pages/images/info.png"></image>
         </view>
       </mp-cell>
       <mp-cell title="应收本金">
@@ -67,3 +67,14 @@
     <button wx:if="{{payoff}}" type="primary" style="width: calc(100% - 80rpx);" bindtap="gotoAgreePage">我要还款</button>
   </view>
 </view>
+<mp-halfScreenDialog 
+  bindbuttontap="buttontap"
+  show="{{showDialog}}"
+  maskClosable="{{false}}" 
+  closabled="{{false}}"
+  title="测试标题B" 
+  subTitle="测试标题B的副标题"
+  desc="辅助描述内容，可根据实际需要安排"
+  tips="辅助提示内容，可根据实际需要安排"
+  buttons="{{buttons}}"
+></mp-halfScreenDialog>

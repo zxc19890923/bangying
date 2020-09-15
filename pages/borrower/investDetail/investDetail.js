@@ -1,6 +1,15 @@
 Page({
   data: {
-    payoff: true
+    payoff: true,
+    buttons: [
+      {
+        type: 'primary',
+        className: '',
+        text: '主操作',
+        value: 1
+      }
+    ],
+    showDialog: false
   },
   onLoad (options) {
     let type = JSON.parse(options.item).type
@@ -19,6 +28,16 @@ Page({
   repaymentRecords () {
     wx.navigateTo({
       url: '/pages/borrower/repayment-records/repayment-records',
+    })
+  },
+  openDialog () {
+    this.setData({
+      showDialog: true
+    })
+  },
+  buttontap () {
+    this.setData({
+      showDialog: false
     })
   }
 })
