@@ -52,3 +52,10 @@ button[disabled][type='primary'] {
   color: #fff !important;
   opacity: .5;
 }
+.iconPosition {
+  margin-right: 30rpx; 
+  width: 40rpx; 
+  height: 40rpx; 
+  vertical-align: middle; 
+  margin-bottom: 2px;
+}

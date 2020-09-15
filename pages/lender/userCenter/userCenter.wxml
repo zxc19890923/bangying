@@ -4,19 +4,19 @@
       <text class="userCenterHeaderText">收款账户信息</text>
     </mp-cell>
     <mp-cell>
-      <image slot="icon" src="../../images/user.png" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+      <image slot="icon" src="../../images/user.png" class="iconPosition"></image>
       <text class="infoText">张三丰</text>
     </mp-cell>
     <mp-cell>
-      <image slot="icon" src="../../images/identity.png" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+      <image slot="icon" src="../../images/identity.png" class="iconPosition"></image>
       <text class="infoText">61032819890922221</text>
     </mp-cell>
     <mp-cell>
-      <image slot="icon" src="../../images/card.png" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+      <image slot="icon" src="../../images/card.png" class="iconPosition"></image>
       <text class="infoText">633344674433</text>
     </mp-cell>
     <mp-cell>
-      <image slot="icon" src="../../images/phone.png" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
+      <image slot="icon" src="../../images/phone.png" class="iconPosition"></image>
       <text class="infoText">150033545465</text>
     </mp-cell>
   </mp-cells>
