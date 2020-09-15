@@ -11,7 +11,7 @@ Page({
       })
     } else if (e.currentTarget.dataset.pm === '3') {
       wx.navigateTo({
-        url: '/pages/lender/mediator/mediator'
+        url: '/pages/mediator/mediator/mediator'
       }) 
     } else if (e.currentTarget.dataset.pm === '4') {
       wx.navigateTo({

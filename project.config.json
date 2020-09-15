@@ -157,6 +157,13 @@
           "id": -1,
           "name": "pages/borrower/repayment-records/repayment-records",
           "pathName": "pages/borrower/repayment-records/repayment-records",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/mediator/mediatorTab/mediatorTab",
+          "pathName": "pages/mediator/mediatorTab/mediatorTab",
           "scene": null
         }
       ]

@@ -1,0 +1,30 @@
+<view class="mediatorCenter">
+  <view class="mediatorList">
+    <mp-form>
+      <mp-cells>
+        <mp-cell>
+          <view class="mediatorHeader">项目列表</view>
+        </mp-cell>
+        <mp-cell hover link>
+          <view>出借方：张旭超</view>
+          <view>欠款方：欧阳啦啦</view>
+          <view class="numberStyle">No.230929348293872</view>
+        </mp-cell>
+        <mp-cell hover link>
+          <view>出借方：张旭超</view>
+          <view>欠款方：欧阳啦啦</view>
+          <view class="numberStyle">No.230929348293872</view>
+        </mp-cell>
+        <mp-cell hover link>
+          <view>出借方：张旭超</view>
+          <view>欠款方：欧阳啦啦</view>
+          <view class="numberStyle">No.230929348293872</view>
+        </mp-cell>
+      </mp-cells>
+    </mp-form>
+  </view>
+  <view class="mediatorBottom">
+    <view bindtap="changeTab" data-pm="0" class="{{activeIndex === '0' ? 'active mediatorBottomLeft': 'mediatorBottomLeft'}}">待确认</view>
+    <view bindtap="changeTab" data-pm="1" class="{{activeIndex === '1' ? 'active mediatorBottomRight': 'mediatorBottomRight'}}">已确认</view>
+  </view>
+</view>

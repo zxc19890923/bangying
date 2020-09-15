@@ -51,8 +51,8 @@ Page({
       this.setData({
         error: ''
       })
-      wx.navigateBack({
-        delta: 0,
+      wx.reLaunch({
+        url: '/pages/mediator/mediatorTab/mediatorTab'
       })
     }
   },
