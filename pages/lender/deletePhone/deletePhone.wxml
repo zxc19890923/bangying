@@ -14,5 +14,7 @@
   <view class="addPhoneBottom">
     <button type="warn" style="width: calc(100% - 80rpx);" bindtap="deletePhone">确认添加</button>
   </view>
-  <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+  <mp-dialog title="移除该号码" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>是否确认移除？移除后该号码对应的信息将不被显示</view>
+  </mp-dialog>
 </view>

@@ -24,6 +24,9 @@ Page({
   },
   tabChange(e) {
     console.log(e, 'tab界面切换', e.detail.index)
+    wx.setNavigationBarTitle({
+      title: e.detail.item.text
+    })
     this.setData({
       activeIndex: e.detail.index
     })

@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    phone: 15001209233
+    phone: 15001209233,
+    dialogShow: false,
+    buttons: [{text: '取消'}, {text: '移除'}],
   },
 
   /**
@@ -26,7 +28,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.setNavigationBarTitle({
+      title: this.data.phone.toString()
+    })
   },
 
   /**
@@ -64,8 +68,19 @@ Page({
 
   },
   deletePhone () {
-    wx.navigateBack({
-      delta: 0,
+    this.setData({
+      dialogShow: true
     })
+  },
+  tapDialogButton (e) {
+    console.log(e)
+    this.setData({
+      dialogShow: false
+    })
+    if (e.detail.index === 1) {
+      wx.navigateBack({
+        delta: 0,
+      })
+    }
   }
 })
