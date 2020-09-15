@@ -7,7 +7,7 @@
   <mp-dialog title="姓名校验" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}" mask-closable="{{false}}">
     <view style="font-size: 30rpx">为确保资金安全，请补全对方姓名</view>
     <view class="name-group">
-      <text>王</text><input class="name-input" bindinput="bindNameKeyInput" auto-focus type="text"/><text>国</text>
+      <text>王</text><input class="name-input" bindinput="bindNameKeyInput" auto-focus type="text" maxlength="1"/><text>国</text>
     </view>
   </mp-dialog>
 </view>

@@ -36,6 +36,9 @@ Page({
     }
   },
   gotoInvestList () {
+    wx.redirectTo({
+      url: '/pages/borrower/investTab/investTab'
+    })
     if (this.data.name.length < 3 || this.data.name.length > 30) {
       this.setData({
         nameError: true,

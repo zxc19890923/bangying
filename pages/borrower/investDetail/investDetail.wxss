@@ -1,0 +1,30 @@
+.authentForm {
+  width: 100%;
+}
+.errorText {
+  color: #F05A50; 
+}
+.infoIcon {
+  width: 32rpx;
+  height: 32rpx;
+}
+.authentTop {
+  padding: 20rpx 30rpx 10rpx 30rpx;
+}
+.firstText {
+  font-size: 34rpx;
+  color: #f05a50;
+  font-weight: 400rpx;
+}
+.secondText {
+  font-size: 34rpx;
+  color: #000;
+}
+.authentListHeader {
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #999;
+}
+.weui-label {
+  width: 280rpx !important;
+}

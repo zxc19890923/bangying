@@ -11,8 +11,7 @@
       </mp-cell>
     </mp-cells>
     <view class="authentBottom">
-      <button type="primary" style="width: calc(100% - 80rpx)" bindtap="gotoInvestList" wx:if="{{name && card}}">下一步</button>
-      <button type="primary" style="width: calc(100% - 80rpx); opacity: 0.5" wx:if="{{!name || !card}}">下一步</button>
+      <button type="primary" style="width: calc(100% - 80rpx)" bindtap="gotoInvestList" disabled="{{!name || !card}}">下一步</button>
     </view>
   </mp-form>
   <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>

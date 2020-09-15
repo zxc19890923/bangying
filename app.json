@@ -15,6 +15,13 @@
     "pages/lender/mediationTerms/mediationTerms",
     "pages/lender/addPhone/addPhone",
     "pages/lender/deletePhone/deletePhone",
+    "pages/borrower/authentication/authentication",
+    "pages/borrower/account/account",
+    "pages/borrower/investTab/investTab",
+    "pages/borrower/investInfo/investInfo",
+    "pages/borrower/userCenter/userCenter",
+    "pages/borrower/investDetail/investDetail",
+    "pages/borrower/repayment-records/repayment-records",
     "pages/repayment/repayment-code"
   ],
   "window": {

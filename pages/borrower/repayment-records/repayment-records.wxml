@@ -1,0 +1,21 @@
+<view class="parent">
+  <view class="top-title">
+    还款记录
+  </view>
+  <view class="list-item">
+    <text class="label fl">2020年12月12日 19:39</text>
+    <text class="text fr">888.88元</text>
+  </view>
+  <view class="list-item">
+    <text class="label fl">2020年12月12日 19:39</text>
+    <text class="text fr">888.88元</text>
+  </view>
+  <view class="list-item">
+    <text class="label fl">2020年12月12日 19:39</text>
+    <text class="text fr">888.88元</text>
+  </view>
+  <view class="list-item">
+    <text class="label fl">2020年12月12日 19:39</text>
+    <text class="text fr">888.88元</text>
+  </view>
+</view>

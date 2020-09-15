@@ -16,7 +16,6 @@ Page({
 
   },
   bindKeyInput (e) {
-    console.log(e.detail.value)
     this.setData({
       code: e.detail.value
     })

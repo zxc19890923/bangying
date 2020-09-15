@@ -5,6 +5,10 @@ Page({
       wx.navigateTo({
         url: '/pages/lender/authentication/authentication',
       })
+    } else if (e.currentTarget.dataset.pm === '2') {
+      wx.navigateTo({
+        url: '/pages/borrower/authentication/authentication'
+      })
     } else if (e.currentTarget.dataset.pm === '4') {
       wx.navigateTo({
         url: '/pages/repayment/repayment-code'

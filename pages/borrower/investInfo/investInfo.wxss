@@ -1,0 +1,132 @@
+.investInfoContainer {
+  background: #fff;
+}
+.investUserInfo {
+  color: #999;
+  padding: 25rpx 30rpx 25rpx 0rpx;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  display: flex;
+  align-items: center;
+}
+.investUserInfoText {
+  font-size: 34rpx;
+  color: #333;
+  flex: 1;
+  margin-left: 20rpx;
+}
+.investUserLogo {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 10rpx;
+}
+.investList {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 30rpx 30rpx 0rpx;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+/* .borrow:hover {
+  background-color: #eee;
+} */
+.investListLeft {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.investListLeftTop {
+  font-size: 34rpx;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.investListLeftCenter {
+  display: flex;
+  align-items: center;
+}
+.moneyIcon {
+  width: 24rpx;
+  height: 24rpx;
+  position: relative;
+  top: 6rpx;
+}
+/* .investListLeftMoneyNum {
+  color: #222;
+  font-size: 48rpx;
+  margin-left: 5rpx;
+} */
+.firstText {
+  font-size: 34rpx;
+  color: #999;
+  font-weight: 400rpx;
+}
+.secondText {
+  font-size: 34rpx;
+  color: #F05A50;
+  font-weight: 600;
+}
+.investListLeftMoneyState {
+  margin-left: 10px;
+}
+.investListLeftBottom {
+  font-size: 24rpx;
+  color: #666;
+}
+.investlistCenter {
+  flex-shrink: 0;
+}
+.investListRight {
+  width: 60rpx;
+  text-align: right;
+  color: #c7c7c7;
+  flex-shrink: 0;
+  font-size: 0;
+}
+.refreshIcon {
+  width: 28rpx;
+  height: 28rpx;
+}
+.investListRefresh {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 30rpx 25rpx 0;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+.investListRefresh .refreshLeft {
+  color: #999;
+  font-size: 26rpx;
+  flex: 1;
+}
+.refreshCenter {
+  font-size: 0;
+}
+.refreshRight {
+  font-size: 26rpx;
+  color: #666;
+  font-weight: 400;
+  margin-left: 8rpx;
+}
+.primaryButton {
+  background: #fff1f0;
+  border: 2rpx solid #F05A50;
+  color: #F05A50;
+  font-size: 28rpx;
+}
+.payoff .firstText {
+  color: #ccc;
+}
+.payoff .secondText {
+  color: #b3b3b3;
+}
+.payoff .investListLeftBottom {
+  color: #b3b3b3;
+}
+.payoff .primaryButton {
+  color: #b3b3b3;
+  background: #f6f8f9;
+  border: 2rpx solid #cccccc;
+}

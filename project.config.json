@@ -143,6 +143,20 @@
           "id": -1,
           "name": "pages/lender/deletePhone/deletePhone",
           "pathName": "pages/lender/deletePhone/deletePhone",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/borrower/investTab/investTab",
+          "pathName": "pages/borrower/investTab/investTab",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/borrower/repayment-records/repayment-records",
+          "pathName": "pages/borrower/repayment-records/repayment-records",
           "scene": null
         }
       ]

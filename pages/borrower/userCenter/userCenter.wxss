@@ -1,0 +1,8 @@
+/* pages/lender/userCenter/userCenter.wxss */
+.infoText {
+  color: #999;
+}
+.userCenterHeaderText {
+  color: #999;
+  font-size: 26rpx;
+}

@@ -34,3 +34,21 @@ page {
   color: #4A9838;
   font-weight: 600;
 }
+.rightArrow {
+  width: 26rpx;
+  height: 36rpx;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+view, text, .weui-input {
+  box-sizing: border-box;
+}
+button[disabled][type='primary'] {
+  background-color: #07c160 !important;
+  color: #fff !important;
+  opacity: .5;
+}

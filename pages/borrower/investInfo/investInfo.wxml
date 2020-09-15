@@ -1,0 +1,73 @@
+<view class="investInfoContainer">
+  <view class="investListRefresh">
+    <view class="refreshLeft">
+      平台名称
+    </view>
+  </view>
+  <view class="investList" bindtap="gotoInvestDetailPage" data-item='{"name": "张旭超", "phone": "15001209233"}'>
+    <view class="investListLeft">
+      <view class="investListLeftCenter">
+        <!-- <view class="investListLeftMoneyIcon"><image class="moneyIcon" src="../../images/money.png"></image></view> -->
+        <view class="investListLeftMoneyNum"><text class="firstText">3156.50</text><text class="secondText"> / 8888.99</text></view>
+    </view>
+      <view class="investListLeftBottom">No.19237890127398127</view>
+    </view>
+    <view class="investlistCenter">
+      <view class="investListLeftMoneyState primaryButton">可调节</view>
+    </view>
+    <view class="investListRight">
+      <image src="../../images/right-arrow.png" class="rightArrow" />
+    </view>
+  </view>
+  <view class="investList" bindtap="gotoInvestDetailPage" data-item='{"name": "张旭超", "phone": "15001209233"}'>
+    <view class="investListLeft">
+      <view class="investListLeftCenter">
+        <!-- <view class="investListLeftMoneyIcon"><image class="moneyIcon" src="../../images/money.png"></image></view> -->
+        <view class="investListLeftMoneyNum"><text class="firstText">3156.50</text><text class="secondText"> / 8888.99</text></view>
+    </view>
+      <view class="investListLeftBottom">No.19237890127398127</view>
+    </view>
+    <view class="investlistCenter">
+      <view class="investListLeftMoneyState primaryButton">可调节</view>
+    </view>
+    <view class="investListRight">
+      <image src="../../images/right-arrow.png" class="rightArrow" />
+    </view>
+  </view>
+  <view style="height: 30rpx; background: #f6f8f9"></view>
+  <view class="investListRefresh">
+    <view class="refreshLeft">
+      平台名称
+    </view>
+  </view>
+  <view class="investList" bindtap="gotoInvestDetailPage" data-item='{"name": "张旭超", "phone": "15001209233"}'>
+    <view class="investListLeft">
+      <view class="investListLeftCenter">
+        <!-- <view class="investListLeftMoneyIcon"><image class="moneyIcon" src="../../images/money.png"></image></view> -->
+        <view class="investListLeftMoneyNum"><text class="firstText">3156.50</text><text class="secondText"> / 8888.99</text></view>
+    </view>
+      <view class="investListLeftBottom">No.19237890127398127</view>
+    </view>
+    <view class="investlistCenter">
+      <view class="investListLeftMoneyState primaryButton">可调节</view>
+    </view>
+    <view class="investListRight">
+      <image src="../../images/right-arrow.png" class="rightArrow" />
+    </view>
+  </view>
+  <view class="investList payoff" bindtap="gotoInvestDetailPage" data-item='{"name": "张旭超", "phone": "15001209233", "type": "2"}'>
+    <view class="investListLeft">
+      <view class="investListLeftCenter">
+        <!-- <view class="investListLeftMoneyIcon"><image class="moneyIcon" src="../../images/money.png"></image></view> -->
+        <view class="investListLeftMoneyNum"><text class="firstText">3156.50</text><text class="secondText"> / 8888.99</text></view>
+    </view>
+      <view class="investListLeftBottom">No.19237890127398127</view>
+    </view>
+    <view class="investlistCenter">
+      <view class="investListLeftMoneyState primaryButton">已结清</view>
+    </view>
+    <view class="investListRight">
+      <image src="../../images/right-arrow.png" class="rightArrow" />
+    </view>
+  </view>
+</view>
