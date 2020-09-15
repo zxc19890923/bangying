@@ -42,7 +42,7 @@
       </mp-cell>
       <mp-cell title="欠款总额">
         32323.20元
-        <view slot="footer" style="font-size: 0">
+        <view slot="footer" style="font-size: 0" bindtap="viewInfo">
           <image class="infoIcon" src="/pages/images/info.png"></image>
         </view>
       </mp-cell>
@@ -64,6 +64,16 @@
     </mp-cells>
   </mp-form>
   <view style="text-align: center; margin: 40rpx 0">
-    <button type="primary" style="width: calc(100% - 80rpx);" bindtap="gotoAgreePage">同意</button>
+    <button type="primary" style="width: calc(100% - 80rpx);" bindtap="gotoAgreePage">发起调解</button>
   </view>
+  <mp-halfScreenDialog 
+    bindbuttontap="halfScreenButtonTap"
+    show="{{halfScreenState}}"
+    extClass="halfScreen"
+    closabled="{{false}}"
+    maskClosable="{{false}}"
+    title="测试标题B" 
+    tips="辅助提示内容，可根据实际需要安排"
+    buttons="{{buttons}}"
+  ></mp-halfScreenDialog>
 </view>

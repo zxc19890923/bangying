@@ -11,12 +11,12 @@ Page({
     disabled: false,
     agreeState: false,
     phone: '',
-    code: '',
+    // code: '',
     name: '',
     idCard: '',
     card: '',
     phoneError: false,
-    codeError: false,
+    // codeError: false,
     nameError: false,
     idCardError: false,
     cardError: false,
@@ -39,16 +39,16 @@ Page({
         })
       }
     }
-    if (pm.currentTarget.dataset.type === 'code') {
-      this.setData({
-        code: pm.detail.value
-      })
-      if (this.data.code.length === 6) {
-        this.setData({
-          codeError: false
-        })
-      }
-    }
+    // if (pm.currentTarget.dataset.type === 'code') {
+    //   this.setData({
+    //     code: pm.detail.value
+    //   })
+    //   if (this.data.code.length === 6) {
+    //     this.setData({
+    //       codeError: false
+    //     })
+    //   }
+    // }
     if (pm.currentTarget.dataset.type === 'name') {
       this.setData({
         name: pm.detail.value
@@ -87,12 +87,12 @@ Page({
         error: '数据格式错误'
       })
     }
-    if (this.data.code.length !== 6) {
-      this.setData({
-        codeError: true,
-        error: '数据格式错误'
-      })
-    }
+    // if (this.data.code.length !== 6) {
+    //   this.setData({
+    //     codeError: true,
+    //     error: '数据格式错误'
+    //   })
+    // }
     if (this.data.name.length < 3 || this.data.name.length > 30) {
       this.setData({
         nameError: true,
@@ -111,7 +111,7 @@ Page({
         error: '数据格式错误'
       })
     }
-    if (!this.data.phoneError && !this.data.nameError && !this.data.codeError && !this.data.idCardError && !this.data.cardError) {
+    if (!this.data.phoneError && !this.data.nameError && !this.data.idCardError && !this.data.cardError) {
       this.setData({
         error: ''
       })
@@ -121,25 +121,25 @@ Page({
     }
   },
   // 倒计时获取手机验证码
-  getCode (options) {
-    let currentTime = this.data.currentTime;
-    this.setData({
-      time: currentTime + '秒',
-      disabled: true
-    })
-    let interval = setInterval(() => {
-      this.setData({
-        time: (currentTime - 1) + '秒'
-      })
-      currentTime--;
-      if (currentTime <= 0) {
-        clearInterval(interval)
-        this.setData({
-          time: '重新获取',
-          currentTime: 60,
-          disabled: false
-        })
-      }
-    }, 1000)
-  }
+  // getCode (options) {
+  //   let currentTime = this.data.currentTime;
+  //   this.setData({
+  //     time: currentTime + '秒',
+  //     disabled: true
+  //   })
+  //   let interval = setInterval(() => {
+  //     this.setData({
+  //       time: (currentTime - 1) + '秒'
+  //     })
+  //     currentTime--;
+  //     if (currentTime <= 0) {
+  //       clearInterval(interval)
+  //       this.setData({
+  //         time: '重新获取',
+  //         currentTime: 60,
+  //         disabled: false
+  //       })
+  //     }
+  //   }, 1000)
+  // }
 })

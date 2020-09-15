@@ -17,7 +17,7 @@
         <image slot="icon" src="{{phoneError === true ? '../../images/error_phone.png' : '../../images/phone.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
         <input bindinput="formInputChange" data-field="{{phone}}" data-type="phone" class="weui-input" placeholder="出借人手机号码" value="{{phone}}" maxlength="11" class="{{phoneError ? 'errorColor': ''}}"/>
       </mp-cell>
-      <mp-cell ext-class="weui-cell_vcode">
+      <!-- <mp-cell ext-class="weui-cell_vcode">
         <image slot="icon" src="{{codeError === true ? '../../images/error_code.png' : '../../images/code.png'}}" style="margin-right: 16px; vertical-align: middle; width:20px; height: 20px;"></image>
         <input bindinput="formInputChange" data-field="{{code}}" data-type="code" class="weui-input" placeholder="验证码" maxlength="6" class="{{codeError ? 'errorColor': ''}}"/>
         <view wx:if="{{!disabled}}" slot="footer" class="weui-vcode-btn" bindtap="getCode">{{time}}</view>
@@ -25,7 +25,7 @@
           <text style="color: #999;">已发送</text>
           <text style="color: #999; display: inline-block; width: 80rpx;">{{time}}</text>
         </view>
-      </mp-cell>
+      </mp-cell> -->
     </mp-cells>
     <view class="authentBottom">
       <!-- <view class="authentBottomTop">
@@ -33,8 +33,8 @@
         <label><text bindtap="gotoAgreementPage" style="margin-left: 10rpx; color: #333;">同意通过帮瀛平台认领债权</text></label>
       </view> -->
       <!-- <view class="authentButton" > -->
-      <button type="primary" style="width: calc(100% - 80rpx)" bindtap="gotoInvestList" wx:if="{{phone && code && name && idCard && card}}">下一步</button>
-      <button type="primary" style="width: calc(100% - 80rpx); opacity: 0.5" wx:if="{{!phone || !code || !name || !idCard || !card}}">下一步</button>
+      <button type="primary" style="width: calc(100% - 80rpx)" bindtap="gotoInvestList" wx:if="{{phone && name && idCard && card}}">下一步</button>
+      <button type="primary" style="width: calc(100% - 80rpx); opacity: 0.5" wx:if="{{!phone || !name || !idCard || !card}}">下一步</button>
       <!-- </view> -->
     </view>
   </mp-form>
