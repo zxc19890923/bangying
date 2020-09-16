@@ -2,6 +2,10 @@
 import http from './utils/api'
 //app.js
 App({
+  globalData: {
+    name: '',
+    age: ''
+  },
   // 初始化完成以后出发，全局只触发一次
   onLaunch: function () {
     // 展示本地存储能力
@@ -23,6 +27,8 @@ App({
           data: params,
           success: success => {
             console.log(success, '获取code信息')
+            // this.globalData.name = "zhangxuchao" 修改
+            console.log(this.globalData.name)
           }
         })
       }
